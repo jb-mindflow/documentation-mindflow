@@ -17,7 +17,7 @@ To act as an MCP Client, we use three distinct components, each with a well-defi
 
 -   **The MCP transport agent:** Handles the HTTP transport layer that sends the requests to the target MCP server with the required authentication.
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzc2MGM4YjQ1LTU1MGQtNDI3Ny05ZDhiLTFjMTA5NzlhMjQxMy9TY3JlZW5zaG90XzIwMjYtMDMtMDJfYXRfMTIuMDUuMTUucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA0ZS05YjRkLWYzODQyOGJjODQ1ZSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTk4NjEmc2lnbmF0dXJlPUw0bjBYVWoyT2g2VTQ5b1lDdXMxNldGVDJFcVEtcEp4LTU2ZXlHVVo0Y2M=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzc2MGM4YjQ1LTU1MGQtNDI3Ny05ZDhiLTFjMTA5NzlhMjQxMy9TY3JlZW5zaG90XzIwMjYtMDMtMDJfYXRfMTIuMDUuMTUucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA0ZS05YjRkLWYzODQyOGJjODQ1ZSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTYyNDUmc2lnbmF0dXJlPUk3Z3NaR0Ewc2Z1RDEtemRUTGdHbmdzSmsyLUJ5WHJUSUc3aFVKVVZhRVU=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
 ### 1\. The MCP expert
 
@@ -27,7 +27,7 @@ This agent functions as a **Protocol Transformer**. Its sole responsibility is t
 
 2.  Add a **Flowhook Trigger,** add two properties which are the **action** (what I need to do) and **the MCP Server** (the target server).
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzE4ZjM2ZmNmLTYyOGMtNDkzNC1hN2Y2LWI2NjQ4ZGY0OGQzYy9TY3JlZW5zaG90XzIwMjYtMDItMjdfYXRfMTEuNTMuNDkucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA2MC1iYjc2LWNjZDg4OTgyMGU4NSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTk4NjMmc2lnbmF0dXJlPXFkeU5MVlUyM1NZRU5xSEwwd0VHbUpxck1aNmwyTU8xOHhwSEZMTkxjNEk=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzE4ZjM2ZmNmLTYyOGMtNDkzNC1hN2Y2LWI2NjQ4ZGY0OGQzYy9TY3JlZW5zaG90XzIwMjYtMDItMjdfYXRfMTEuNTMuNDkucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA2MC1iYjc2LWNjZDg4OTgyMGU4NSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTYyNDMmc2lnbmF0dXJlPUVvSmhjajdMT0U3aC0wTnlzcWwyU2VXRUEtVEtiVm1QZllGWHlIaWRwOEE=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
 3.  Add an AI··Task and paste the following prompt:
 
@@ -35,7 +35,7 @@ This agent functions as a **Protocol Transformer**. Its sole responsibility is t
 
 markdown
 
-`#Role You are an MCP-Orchestrating agent. Process user prompts, determine required actions, select the correct MCP server, and execute the appropriate tools.  #Step 1: Parse the user prompt Extract: Required Action, Required Data, and Target MCP Server.  #Step 2: Validate server availability If no server is found, return: {"error": {"code": "MCP_SERVER_NOT_FOUND", ...}}.  #Step 3: MCP Protocol lifecycle  1. **Discover capabilities:** List mandatory tools. 2. **Select the correct tool:** Validate inputs against the discovered schema. 3. **Call the tool:** Generate the correct JSON-RPC payload.  **Example payload:**  {   "jsonrpc": "2.0",   "method": "<method_name>",   "params": { "<param>": "<value>" },   "id": "<unique_id>" }  #Output Return ONLY a JSON object with the result. No markdown, no prose.`
+`#Role You are an MCP-Orchestrating agent. Process user prompts, determine required actions, select the correct MCP server, and execute the appropriate tools.  #Step 1: Parse the user prompt Extract: Required Action, Required Data, and Target MCP Server.  #Step 2: Validate server availability If no server is found, return: {"error": {"code": "MCP_SERVER_NOT_FOUND", ...}}.  #Step 3: MCP Protocol lifecycle  1. **Discover capabilities:** List mandatory tools. 2. **Select the correct tool:** Validate inputs against the discovered schema. 3. **Call the tool:** Generate the correct JSON-RPC payload.  **Example payload:**  {   "jsonrpc": "2.0",   "method": "`<method_name>`",   "params": { "`<param>`": "`<value>`" },   "id": "`<unique_id>`" }  #Output Return ONLY a JSON object with the result. No markdown, no prose.`
 
 :::note
 💡
@@ -56,11 +56,11 @@ Once the `MCP expert agent` has generated the JSON-RPC payload, you need a way t
 
 2.  Add a **Flowhook Trigger** you need to add one property which is the **payload** (retrieve from the MCP expert)
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzkxY2QyNDQ0LTNhYjctNDIxNi1hNGFhLTdlNjI4MzBkYWQyZi9TY3JlZW5zaG90XzIwMjYtMDItMjdfYXRfMTEuMjQuMDAucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA4ZC1hMmM2LWQ3Yzk3ODQyYmE1OCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTk4NTYmc2lnbmF0dXJlPTE3NjMtc2U3cFoyQ0hhYnJkZks4bDlmVGpnajlnblJNY1dKbjRDLVI1TVE=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzkxY2QyNDQ0LTNhYjctNDIxNi1hNGFhLTdlNjI4MzBkYWQyZi9TY3JlZW5zaG90XzIwMjYtMDItMjdfYXRfMTEuMjQuMDAucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODA4ZC1hMmM2LWQ3Yzk3ODQyYmE1OCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTYyNDkmc2lnbmF0dXJlPTZMZ3d1SHBPV3ZQTThuYllqQkZMOGhwY2RkemxJR3Rodm5EMnBURktJZU0=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
 3.  Configure this agent with an **HTTP Request** action.
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2MwNjEzYzhlLWEwM2YtNDNiYS04MGZkLWE5NWRmNDFjMGFkNi9TY3JlZW5zaG90XzIwMjYtMDItMjZfYXRfMTYuNTcuMTcucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODBhNy1iMDQyLWY0NzIxMzA1NWU4YSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTk4NTYmc2lnbmF0dXJlPUJYamR6Q1RjYkp2MXFvUzZkc2NJeEVoX1g5dWR6MWxHT1FfWWZ6clFOcms=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2MwNjEzYzhlLWEwM2YtNDNiYS04MGZkLWE5NWRmNDFjMGFkNi9TY3JlZW5zaG90XzIwMjYtMDItMjZfYXRfMTYuNTcuMTcucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODBhNy1iMDQyLWY0NzIxMzA1NWU4YSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTYyNDcmc2lnbmF0dXJlPVktNm5WZEZYTGkzM3dsaExvX0lscmRPdWgwaUVWdFhMOHNMU3FGMlMyWTQ=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
 -   **Method:** `POST`
 
@@ -98,7 +98,7 @@ For generic or large-scale use cases involving multiple external tools _(e.g., G
 
 We recommend a **distributed swarm** structure for example:
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzBkMWRhNTYwLTRjNTktNGQ3YS1iMjVmLWU3ZjUyOWQ2ZDQ4NC8yNGQwMjQwZS04OTAwLTQ4MjktOWM4Zi1jNWNlYWI1N2Y5NzQucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODAzYi1iOTIxLWQ2ZDNkOTM5NWQzZiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTk4NTgmc2lnbmF0dXJlPXRiX3hiWVZDd1NYRVpBdXVTT3ZTM09lSXFtcVE5RmZJVkE2SkRyUWxQR2M=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzBkMWRhNTYwLTRjNTktNGQ3YS1iMjVmLWU3ZjUyOWQ2ZDQ4NC8yNGQwMjQwZS04OTAwLTQ4MjktOWM4Zi1jNWNlYWI1N2Y5NzQucG5nP3RhYmxlPWJsb2NrJmlkPTMxOTkzYTA4LTBhYjAtODAzYi1iOTIxLWQ2ZDNkOTM5NWQzZiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTYyNDcmc2lnbmF0dXJlPUhjQ25aTzdiSzZ6TEFkQnpuN2hiUXVrVlY0X2ZybVdlb2JyYU8tRTZhbGs=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
 ### The modular setup
 
