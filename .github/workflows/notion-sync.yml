@@ -1,4 +1,4 @@
-name: Sync from Notion
+name: Sync from Notion (Public Scraper)
 
 on:
   schedule:
@@ -22,15 +22,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install notion-to-md
-        run: npm install -g @tryfabric/martian @notionhq/client
+      - name: Install scraper dependencies
+        run: npm install cheerio turndown
 
-      - name: Sync Notion content
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_ROOT_PAGE_ID: ${{ secrets.NOTION_ROOT_PAGE_ID }}
-        run: |
-          node scripts/notion-sync.js
+      - name: Scrape Notion public site
+        run: node scripts/notion-scrape.js
 
       - name: Check for changes
         id: changes
@@ -41,10 +37,13 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "docs: sync content from Notion"
-          title: "docs: automated Notion sync"
+          commit-message: "docs: sync content from Notion public site"
+          title: "docs: automated Notion content sync"
           body: |
-            Automated content sync from Notion Help Center.
+            Automated content sync scraped from the public Notion Help Center.
+
+            No API token needed — this scrapes the publicly accessible pages at
+            `mindflowio.notion.site`.
 
             Please review the changes before merging.
           branch: notion-sync/auto-update
