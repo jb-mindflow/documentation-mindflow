@@ -302,7 +302,41 @@ function extractContent(html) {
 
   // Convert to markdown
   const contentHtml = $main.html() || "";
-  const markdown = turndown.turndown(contentHtml).trim();
+  let markdown = turndown.turndown(contentHtml).trim();
+
+  // Escape angle brackets that MDX would interpret as JSX tags.
+  // Matches <WORD> patterns that are NOT valid HTML tags (e.g. <YOURTOKEN>, <YOUR_API_KEY>).
+  // Common HTML tags are preserved.
+  const HTML_TAGS = new Set([
+    "a","abbr","address","article","aside","audio","b","blockquote","body","br",
+    "button","canvas","caption","cite","code","col","colgroup","dd","del","details",
+    "dfn","div","dl","dt","em","fieldset","figcaption","figure","footer","form",
+    "h1","h2","h3","h4","h5","h6","head","header","hr","html","i","iframe","img",
+    "input","ins","kbd","label","legend","li","link","main","mark","meta","nav",
+    "ol","optgroup","option","output","p","picture","pre","progress","q","rp","rt",
+    "ruby","s","samp","script","section","select","small","source","span","strong",
+    "style","sub","summary","sup","table","tbody","td","template","textarea","tfoot",
+    "th","thead","time","title","tr","track","u","ul","var","video","wbr",
+  ]);
+
+  markdown = markdown.replace(/<([A-Za-z][A-Za-z0-9_.-]*)([^>]*)>/g, (match, tag, rest) => {
+    // Preserve valid HTML tags
+    if (HTML_TAGS.has(tag.toLowerCase())) return match;
+    // Preserve closing tags for valid HTML
+    if (tag.startsWith("/") && HTML_TAGS.has(tag.slice(1).toLowerCase())) return match;
+    // Escape everything else: <YOURTOKEN> → `<YOURTOKEN>`
+    return "`" + match + "`";
+  });
+
+  // Also escape closing tags for non-HTML elements
+  markdown = markdown.replace(/<\/([A-Za-z][A-Za-z0-9_.-]*)>/g, (match, tag) => {
+    if (HTML_TAGS.has(tag.toLowerCase())) return match;
+    return "`" + match + "`";
+  });
+
+  // Escape lone backslashes that MDX treats as escape sequences
+  // (but keep valid markdown escapes like \* \_ \`)
+  markdown = markdown.replace(/\\(?![*_`~\[\](){}#+\-.!|\\>])/g, "\\\\");
 
   return { title, markdown };
 }
