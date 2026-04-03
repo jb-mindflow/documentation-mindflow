@@ -69,7 +69,7 @@ Semgrep is an indispensable tool for organizations committed to building secure 
 
 ![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3MTA2OWYxOC02MzQzLTRkMmUtYWMzMy1mYjgxMGY3MjVkMDglMkZTY3JlZW5zaG90XzIwMjMtMDgtMDNfYXRfMTYuMjIuMTUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTkzMjQ5Nzk0LTIwNGQtNDU2Mi1hYzg1LWM5NzRmNDFhNjBhMiZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
-9.  Insert _Authorization_ in the **`Key`** field and _Bearer <YOUR\_API\_KEY>_ in the `**Value**` field.
+9.  Insert _Authorization_ in the **`Key`** field and _Bearer `<YOUR\_API\_KEY>`_ in the `**Value**` field.
 
 ![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3N2JlZGFiZC03MDY5LTQ1NmEtYTFkMi0xN2QwYzI3NGVlMmUlMkZTY3JlZW5zaG90XzIwMjMtMDgtMDNfYXRfMTYuMjIuMzUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWRmYjEwYjI0LTQ2ZmMtNDUyYy1hODg3LWNlZDMzMGM4MjJlNSZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
