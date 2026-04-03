@@ -190,36 +190,40 @@ const PAGES = [
   },
 ];
 
-// Integration pages — auto-discovered from the integrations index page
+// Integration pages — slug on docs.mindflow.io → local filename
+// Some integrations have broken slugs on Notaku (raw Notion IDs), so we
+// map the actual URL path to the desired local file slug.
 const KNOWN_INTEGRATIONS = [
-  "auth0",
-  "atlassian",
-  "aws",
-  "bitwarden",
-  "cisco-meraki-dashboard",
-  "crowdstrike",
-  "elastic-cloud",
-  "eset",
-  "facebook",
-  "google",
-  "greynoise",
-  "hashicorp-vault",
-  "jamf-pro",
-  "microsoft",
-  "onelogin",
-  "okta",
-  "pagerduty",
-  "phish-report",
-  "salesforce",
-  "semgrep",
-  "sentinelone",
-  "servicenow",
-  "slack",
-  "sophos",
-  "urlscan.io",
-  "virustotal",
-  "wiz",
-  "zabbix",
+  { slug: "auth0", file: "auth0" },
+  { slug: "atlassian", file: "atlassian" },
+  { slug: "aws", file: "aws" },
+  { slug: "bitwarden", file: "bitwarden" },
+  { slug: "cisco-meraki-dashboard", file: "cisco-meraki" },
+  { slug: "crowdstrike", file: "crowdstrike" },
+  { slug: "elastic-cloud", file: "elastic-cloud" },
+  { slug: "eset", file: "eset" },
+  { slug: "facebook", file: "facebook" },
+  { slug: "google", file: "google" },
+  { slug: "greynoise", file: "greynoise" },
+  { slug: "hashicorp-vault", file: "hashicorp-vault" },
+  { slug: "jamf-pro", file: "jamf-pro" },
+  { slug: "microsoft", file: "microsoft" },
+  { slug: "onelogin", file: "onelogin" },
+  { slug: "okta", file: "okta" },
+  { slug: "pagerduty", file: "pagerduty" },
+  { slug: "phish-report", file: "phish-report" },
+  // Salesforce has a broken Notaku slug (raw Notion ID)
+  { slug: "2ed93a080ab080f3a672f5a9e4785570", file: "salesforce", isNotionId: true },
+  { slug: "semgrep", file: "semgrep" },
+  { slug: "sentinelone", file: "sentinelone" },
+  { slug: "servicenow", file: "servicenow" },
+  { slug: "slack", file: "slack" },
+  // Sophos has a broken Notaku slug (raw Notion ID)
+  { slug: "806e6d3ba27c423285bc81d17abc2440", file: "sophos", isNotionId: true },
+  { slug: "urlscan.io", file: "urlscan" },
+  { slug: "virustotal", file: "virustotal" },
+  { slug: "wiz", file: "wiz" },
+  { slug: "zabbix", file: "zabbix" },
 ];
 
 // ── Turndown (HTML → Markdown) setup ───────────────────────────────────────────
@@ -365,14 +369,16 @@ async function main() {
     await new Promise((r) => setTimeout(r, 500));
   }
 
-  // Scrape integration pages (auto-discover from known list)
+  // Scrape integration pages
   console.log("\n--- Integration pages ---\n");
 
-  for (const slug of KNOWN_INTEGRATIONS) {
-    const urlPath = `/integrations/${slug}`;
-    // Map to Docusaurus file (normalize slug for filesystem)
-    const fileSlug = slug.replace(/\./g, "").replace(/\s+/g, "-").toLowerCase();
-    const filePath = `docs/integrations/${fileSlug}.md`;
+  for (let i = 0; i < KNOWN_INTEGRATIONS.length; i++) {
+    const integration = KNOWN_INTEGRATIONS[i];
+    // Pages with broken Notaku slugs (raw Notion IDs) use root path
+    const urlPath = integration.isNotionId
+      ? `/${integration.slug}`
+      : `/integrations/${integration.slug}`;
+    const filePath = `docs/integrations/${integration.file}.md`;
 
     try {
       process.stdout.write(`Scraping ${urlPath} ... `);
@@ -384,9 +390,7 @@ async function main() {
         continue;
       }
 
-      const pos =
-        KNOWN_INTEGRATIONS.indexOf(slug) + 1;
-      writeDoc(filePath, title, markdown, { sidebar_position: pos });
+      writeDoc(filePath, title, markdown, { sidebar_position: i + 1 });
       console.log(`OK → ${filePath}`);
       written++;
     } catch (err) {
