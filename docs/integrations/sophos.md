@@ -1,24 +1,36 @@
 ---
+title: Sophos
 sidebar_position: 24
-title: "Sophos"
 ---
 
 # Sophos
 
-Cybersecurity and network protection.
+## Credentials
 
-## Overview
+Reference: [https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ApiTokenManagement.html](https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ApiTokenManagement.html)
 
-Learn how to connect Sophos to Mindflow and use it in your automation flows.
+Procedure:
 
-## Authentication
+1.  Click on `Global Settings` Section
 
-Configure your Sophos credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+2.  Click on `API Token Management`
 
-## Available actions
+3.  Click on `Add Token` & and name your new token
 
-Once connected, you can use Sophos actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+4.  Copy/paste your credentials
 
-## Example use cases
+**Screenshots**
 
-Common automation scenarios using Sophos with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYwYWRlOWU5ZC0zMjgxLTRiYWUtODQ5NS00ZDQwNzcyOWM2ZmElMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAzLTAzX2FfMTUuNTIuMDcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTU0NmNjOTQxLTQ4MDItNGRmMy1hY2FiLTNhZjBkMDVjYWY3MCZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4YjNmZjQzYy00ZmU5LTQ1ZmEtYmExNC05MzYyYTZmMjhlNWQlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAzLTAzX2FfMTUuNTIuNDUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTc5ZTgyMTkwLTlmZTgtNDg1MS04ZDk4LWNmNmYzNGM4NTI3YyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYxZTk0NjVkMi1jOWU5LTQxNjAtYTlmNS0xNmQ5MDA5Yjc2YzclMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAzLTAzX2FfMTUuNTMuNTMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTUzNzBiZWZiLWNhMmMtNGI5Mi05ZDIxLThjNTA1MTcyNzkzYyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY2N2U1ZGUxNS1mMGMzLTQ0ZGYtYTU3Mi0wNzhlZDdhMjE3OTUlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAzLTAzX2FfMTUuNTQuMDYucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWJiMjFlNTQzLTVjNDMtNDU2NS04MjY3LTIyODMwYWE5NjI5NiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZlMWE3ZGRiOS1iMTVlLTQzMmYtOTJmZS05NDk4ZDcxYTIxMWQlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAzLTAzX2FfMTUuNTQuMTkucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTc2MDk5ODhjLTY1ZWYtNDk3MC1hNTI5LWM3NDdmZDA1Nzk0ZiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+[![Tenable](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E3ODExZTgxMS1lZTcxLTQ0ZmUtYmJlNS1lOTA2ZTVlYjA0MmIlM0FUZW5hYmxlX0xvZ28uanBlZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0xYTU5M2EwOC0wYWIwLTgwMTItODA0YS1mMDE3NWIzZTg3NzMmY2FjaGU9djImd2lkdGg9MjAw)
+
+Tenable](/1a593a080ab08012804af0175b3e8773)

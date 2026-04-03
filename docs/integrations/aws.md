@@ -1,24 +1,10 @@
 ---
+title: Examples of use cases
 sidebar_position: 3
-title: "AWS"
 ---
 
-# AWS
+# Examples of use cases
 
-Amazon Web Services cloud infrastructure.
+[![fetch a data hosted in a S3 bucket](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZiYWM0NjFhOS1mMWMzLTQwYTAtODg1MS1iMDMxMDQyZjYxOTglMkZBbWF6b24tU2ltcGxlLVN0b3JhZ2UtU2VydmljZS1TM19CdWNrZXQtd2l0aC1PYmplY3RzX2xpZ2h0LWJnNHgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTEwYTkzYTA4LTBhYjAtODBkZS1hOGViLWZmNzkzMGU5ZmFmMyZjYWNoZT12MiZ3aWR0aD0yMDA=)
 
-## Overview
-
-Learn how to connect AWS to Mindflow and use it in your automation flows.
-
-## Authentication
-
-Configure your AWS credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
-
-## Available actions
-
-Once connected, you can use AWS actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
-
-## Example use cases
-
-Common automation scenarios using AWS with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+fetch a data hosted in a S3 bucket](/integrations/aws/fetch-a-data-hosted-in-a-s3-bucket)

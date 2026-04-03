@@ -1,24 +1,48 @@
 ---
+title: Elastic Cloud
 sidebar_position: 7
-title: "Elastic Cloud"
 ---
 
 # Elastic Cloud
 
-Search, logging, and observability.
+## Credentials
 
-## Overview
+Reference: [https://www.elastic.co/guide/en/cloud/current/ec-api-authentication.html](https://www.elastic.co/guide/en/cloud/current/ec-api-authentication.html)
 
-Learn how to connect Elastic Cloud to Mindflow and use it in your automation flows.
+Procedure:
 
-## Authentication
+1.  Log in to the [Elasticsearch Service Console](https://cloud.elastic.co/?baymax=docs-body&elektra=docs).
 
-Configure your Elastic Cloud credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+2.  Select your deployment on the home page in the Elasticsearch Service card or go to the deployments page.
 
-## Available actions
+3.  Under the **Features** tab, open the **API keys** page. Any keys currently associated with your account are listed.
 
-Once connected, you can use Elastic Cloud actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+4.  Select **Generate API key**.
 
-## Example use cases
+5.  Provide a name and select **Generate API key**.
 
-Common automation scenarios using Elastic Cloud with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+**Screenshots**
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZhZTExOGE0Mi05N2Y2LTQ4MDEtYTEyNS1iMjU1NTI5ZGExYmQlMkZDYXB0dXJlX2RjcmFuXzIwMjItMDQtMTRfXzExLjI2LjQ2LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0xY2UxMjY5MS1jMzJhLTQ2MTgtOWM2Zi02YjgwMWM4ZGUyNDMmY2FjaGU9djImd2lkdGg9MTkyMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZjZmUxNWQwZC05YzRjLTQwMjUtYTYwMy0wMTM3MmJmOGZmMTclMkZDYXB0dXJlX2RjcmFuXzIwMjItMDQtMTRfXzExLjI2LjU3LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD03NmIzYmI3My1mNzQ1LTQxY2YtODg1MC0wZjRkYzBmMTM5NTkmY2FjaGU9djImd2lkdGg9MTkyMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY0MGJmYjdjZS1kMTFhLTRlZWQtYWI2OC00MmNhMmNjNmRkYjglMkZDYXB0dXJlX2RjcmFuXzIwMjItMDQtMTRfXzExLjI3LjA2LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1hZjVhMzQ5ZC1jYzg3LTQyYWYtYjJhYi1kMGU1ZTFlZmYxZGYmY2FjaGU9djImd2lkdGg9MTkyMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZiOTFjNjA5Yy00NjM2LTQ1OTYtOWQ1NS03NmVmOTFmYTYzMzYlMkZDYXB0dXJlX2RjcmFuXzIwMjItMDQtMTRfXzExLjI3LjI0LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1lNDJlMjc3ZS0wZTQ5LTRhODYtYWY5Zi01NzNhNTc3ZjVmODUmY2FjaGU9djImd2lkdGg9MTkyMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3Yjk5ZTJkMS0wNzE4LTQ1ZmYtOGYwOS1lYmVjNGM0MjMwZDklMkZDYXB0dXJlX2RjcmFuXzIwMjItMDQtMTRfXzExLjI3LjQwLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1iZTIyYTM5Yi1hZjkxLTRjYzYtODE0Zi0zNGYxOTkxYTA3OTEmY2FjaGU9djImd2lkdGg9MTkyMA==)
+
+## Authentification
+
+\-H Authorization: ApiKey <YOURTOKEN>
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYxNjhmMDM0MS1hNWE3LTQwYjItODgwZi1kNjM0YmRjYzI1ODMlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTI0X2FfMTQuMzAuMjEucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWFjOTJhZjJlLTQxNzctNDBjNS1hNjM5LTVjY2E1ODE4NjA1NSZjYWNoZT12MiZ3aWR0aD01NzY=)
+
+← Previous
+
+[Bitwarden](https://docs.mindflow.dev/integrations/bitwarden)
+
+Next →
+
+[Google](https://docs.mindflow.dev/integrations/google)

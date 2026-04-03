@@ -1,24 +1,24 @@
 ---
+title: OneLogin
 sidebar_position: 15
-title: "OneLogin"
 ---
 
 # OneLogin
 
-Identity and access management.
+Reference: [https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials](https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials)
 
-## Overview
+Procedure:
 
-Learn how to connect OneLogin to Mindflow and use it in your automation flows.
+1.  Click on Developper
 
-## Authentication
+2.  Pick `API Access`
 
-Configure your OneLogin credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+3.  Click on New Credential
 
-## Available actions
+**Screenshots**
 
-Once connected, you can use OneLogin actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4NjVhNGY1ZS1lNGZkLTRlZjgtODJlYy01MTEzMzliNTRiY2YlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTA1LTMwX2FfMTUuNDEuNTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWU4YWJhZWRlLTk4ZTUtNDFhMC1hNDhmLTE0ZjY3NDljZGMwYSZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
-## Example use cases
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYzNWYyNTBhMi1iZWZkLTQ0MjMtOTIxOC1hNDFiYzNkYWZhMmElMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTA1LTMwX2FfMTUuNDIuMTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTZmMGVlMjE3LTliMzItNDcwNC1iNWFmLTQwMzFiNDdhN2I0NSZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
-Common automation scenarios using OneLogin with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4NWNiNWQzZi1iNmYwLTQyMTQtODA0MC04NGE1YTQ1ZjZkM2QlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTA1LTMwX2FfMTUuNDIuMzUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTUxODg3ZjU3LWNjOGItNGFiYy04ZWI4LTI1YmIwMDAyMzY2YiZjYWNoZT12MiZ3aWR0aD0yNDAw)

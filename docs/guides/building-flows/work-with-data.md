@@ -1,20 +1,20 @@
 ---
+title: Work with data
 sidebar_position: 4
-title: Work with Data
 ---
 
-# Work with Data
+# Work with data
 
-Learn how to manipulate, transform, and pass data between steps in your flows.
+This documentation section illuminates your data's transformative journey within our automation cybersecurity tool. Discover the intricacies of data manipulation, cleansing, and enrichment! This resource equips you with the knowledge to seamlessly:
 
-## Data mapping
+-   extract or add data
 
-Map data from one step's output to another step's input using the visual data mapper. Navigate through JSON structures to select the exact field you need.
+-   apply functions to convey the result into `**variables**` that can be used in the following steps
 
-## Expressions
+-   convert raw data into actionable insights
 
-Use expressions to transform data on the fly — concatenate strings, perform calculations, format dates, and more.
+[![Transform data and reassign variables](https://www.notion.so/icons/conceal_purple.svg?mode=light)
 
-## Variables
+Transform data and reassign variables](/guides/building-flows/work-with-data/transform-data-and-reassign-variables)[![Transform functions](https://www.notion.so/icons/mathematics_purple.svg?mode=light)
 
-Store and retrieve data using flow variables for values that need to persist across multiple steps.
+Transform functions](/guides/building-flows/work-with-data/transform-functions)

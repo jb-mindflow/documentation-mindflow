@@ -1,24 +1,30 @@
 ---
+title: URLScan.io
 sidebar_position: 25
-title: "URLScan.io"
 ---
 
 # URLScan.io
 
-Website scanning and analysis.
+## Credentials
 
-## Overview
+Reference: [https://urlscan.io/docs/api/](https://urlscan.io/docs/api/)
 
-Learn how to connect URLScan.io to Mindflow and use it in your automation flows.
+Procedure:
 
-## Authentication
+1.  Click on profile
 
-Configure your URLScan.io credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+2.  Pick `Settings API`
 
-## Available actions
+3.  Click on Create an API Key
 
-Once connected, you can use URLScan.io actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+4.  Copy/paste personal or premium API key
 
-## Example use cases
+**Screenshots**
 
-Common automation scenarios using URLScan.io with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYxN2RkN2I5MC0zOTM1LTRkMzAtODMxOC01NDBkNjViMjUxMTklMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAyLTI0X2FfMTUuMTEuNDIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTZlMTdjMThkLTNlNGEtNDNlNy04ZDhiLWVkMGU0ZTNiMDEwYyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYxYjFjZjlhOC1iOThkLTQxZmUtYTNmZi1lZGFmYWJiMTc4NjIlMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAyLTI0X2FfMTUuMTEuNTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWNkZDhlYjFkLWRmYTItNDQ3MS05YjBhLWY5NjFkYjE2YTdiYiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYwNTY5Y2I3Ni1mMWY3LTRjZmQtOTZmNC1lYzIwYTY5MGNhZTclMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAyLTI0X2FfMTUuMTIuMDYucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWI3ODJjZGQ4LTk1MTktNGU5OS1hODdhLTUzMGFiZTE5YzAwYiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZlYTZmYjE2Zi00ZTBlLTQyZDMtOTM0Zi1iM2U4ZjY4OGM3YTElMkZDYXB0dXJlX2RlY3Jhbl8yMDIyLTAyLTI0X2FfMTUuMTIuNTMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTNlOTAyY2EyLTkwZjgtNDZmMC1iMTRmLTI4ODQ1MDljOGViOSZjYWNoZT12MiZ3aWR0aD0yNDAw)

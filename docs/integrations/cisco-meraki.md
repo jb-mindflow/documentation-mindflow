@@ -1,24 +1,100 @@
 ---
+title: Cisco Meraki Dashboard
 sidebar_position: 5
-title: "Cisco Meraki Dashboard"
 ---
 
 # Cisco Meraki Dashboard
 
-Network management and monitoring.
+## Introduction
 
-## Overview
+Connecting the Cisco Meraki Dashboard to Mindflow allows you to automate network management, security monitoring, and device orchestration. This setup relies on a **Bearer Token (API Key)**, which provides full programmatic access to your Meraki organizations and networks.
 
-Learn how to connect Cisco Meraki Dashboard to Mindflow and use it in your automation flows.
+* * *
 
-## Authentication
+## 1\. Generate a Cisco Meraki API Key
 
-Configure your Cisco Meraki Dashboard credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+To interact with the Meraki API, you must first enable API access for your organization and generate a personal API key.
 
-## Available actions
+### Step 1.1: Enable API Access
 
-Once connected, you can use Cisco Meraki Dashboard actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+1.  Log in to the **Cisco Meraki Dashboard**.
 
-## Example use cases
+2.  Navigate to **Organization > Configuration > Settings**.
 
-Common automation scenarios using Cisco Meraki Dashboard with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+3.  Ensure that the **Dashboard API access** is set to **"Enable access to the Cisco Meraki Dashboard API"**.
+
+4.  Click **Save Changes**.
+
+### Step 1.2: Generate Your Key
+
+As shown in your Meraki screenshot:
+
+1.  Go to your profile (top right) and select **My Profile**.
+
+2.  Scroll down to the **API & Webhooks** section.
+
+3.  Under **Personal API keys**, click the **Generate API Key** button.
+
+4.  **Copy your API key immediately.** Meraki only shows this key once. If you lose it, you will have to revoke the old one and generate a new one.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2E2MmEyYTJlLWRmY2QtNDUwYy1hZjk5LTUzM2Y0ZTQ1NWY5Zi9TY3JlZW5zaG90XzIwMjUtMDMtMTdfYXRfMTEuMDMuNDFfQU0ucG5nP3RhYmxlPWJsb2NrJmlkPTMzNTkzYTA4LTBhYjAtODA5Yi05ZDU4LWQ3NTU1ZGIxZGYxYiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE1MTA2Mzcmc2lnbmF0dXJlPW9fcUtQb0JYbG5hMlQ0bVdNYUVsN19fc0JKd1hYLWJuZTdVUVFRMWJTU2c=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+## 2\. Configure the Mindflow Credential
+
+Now, you will take that API key and securely store it in Mindflow to enable your automated workflows.
+
+### Step 2.1: Select the Meraki Service
+
+1.  In the Mindflow platform, navigate to your **Environments**.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzJiY2Q2NWY3LTExMWQtNDYzYy1iNTUzLTM2NzJiMjRjZWFhNS9TY3JlZW5zaG90XzIwMjYtMDQtMDFfYXRfMDguNTguMzUucG5nP3RhYmxlPWJsb2NrJmlkPTMzNTkzYTA4LTBhYjAtODA0My05NzVhLWNjOWRlZmMxNzc0OSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE1MTA2MzUmc2lnbmF0dXJlPVM3VWhwS0sydGg2YUdkZF9QeHNSa1VNNkVQanQ5b2lmYl9Wd0RJeUZZb1U=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+2.  Click **Create Credential** and search for **"Cisco Meraki Dashboard"**.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzdiOTdmNWFjLWJiZDEtNDFmMC05MGVjLTZjNDAwOWNiZDBiZi9TY3JlZW5zaG90XzIwMjYtMDQtMDFfYXRfMDkuMjIuMzUucG5nP3RhYmxlPWJsb2NrJmlkPTMzNTkzYTA4LTBhYjAtODA5OS1hYjA4LWY5Y2UyMGVlZDRkMCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE1MTA2MzUmc2lnbmF0dXJlPTU1aXhDaVB3aDBnTUEyRS1zbkZDLUZOeW42TW1iYnhrLWVYdnVaNFlwcnc=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+### Step 2.2: Basic Configuration
+
+Mindflow provides a native form for Meraki. Fill out the following fields as shown in the screenshots below:
+
+-   **Credential name \***: Provide a descriptive name (e.g., "Meraki Production Key").
+
+-   **URL \***: This is usually pre-filled as `https://api.meraki.com/api/v1`. Keep this default unless you are using a specific regional shard.
+
+-   **X-Cisco-Meraki-API-Key \***: Paste your API key here.
+
+### Step 2.3: Advanced Header Configuration (Optional/Alternative)
+
+If you prefer to use the **Advanced** settings or are working with a generic HTTP connector, you can configure the authentication via the **Headers** section:
+
+**Field**
+
+**How to Configure**
+
+**Service \***
+
+This will automatically display **Cisco Meraki Dashboard** (Native).
+
+**Credential name \***
+
+Enter a unique name (e.g., `Meraki_Production_Key`).
+
+**URL \***
+
+Select the default: `https://api.meraki.com/api/v1`.
+
+Header
+
+Click Add item, name the item `Authorization`. As value type in `Bearer <api_token>`
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2ZiMTdmZGIwLWExY2QtNGM0YS1hMWRlLTdiYmJjYzU2NWVmNi9TY3JlZW5zaG90XzIwMjYtMDQtMDFfYXRfMDkuMjIuNTMucG5nP3RhYmxlPWJsb2NrJmlkPTMzNTkzYTA4LTBhYjAtODBkMC05ZTZjLWQyMWY4OTM4MDhkMiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE1MTA2MzUmc2lnbmF0dXJlPUZ1TWNETHc3ZDNSaEVkNXgwNU9GTFN4RjRlZmI4dmF0TUtYbjZjS2k5d0E=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+1.  Click on the **Advanced** toggle.
+
+2.  Expand the **Headers** section.
+
+3.  Add an item with the Key: `**Authorization**`.
+
+### Step 2.4: Save and Test
+
+Click **Create**. Your Cisco Meraki credential is now securely stored and ready to be pulled into any Mindflow action, allowing you to automate everything from SSID management to security group updates.

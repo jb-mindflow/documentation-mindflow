@@ -1,24 +1,76 @@
 ---
+title: Jamf Pro
 sidebar_position: 13
-title: "Jamf Pro"
 ---
 
 # Jamf Pro
 
-Apple device management.
+## **Getting started with JAMF Pro**
 
-## Overview
+1.  Go to the **`Vault`** page
 
-Learn how to connect Jamf Pro to Mindflow and use it in your automation flows.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYyMWNiYmFhYi1mYjZkLTRhOGUtOWY1YS01NmFmMGJiODdkZTMlMkYyLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD00OGU1MmZmMy04YjgxLTQyNWEtYThlOS1jYWYyNDdiNTA3ZmQmY2FjaGU9djImd2lkdGg9MTE1Mg==)
 
-## Authentication
+2.  Click on the **`Create a Credential`** button and select **`HTTP`**.
 
-Configure your Jamf Pro credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3NTgxMDQ5OS04NjQ0LTRhOWYtOWQzMi1hYzdlZjc0NTU2NGElMkYzLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD01ZTA2ZDliOC0zNTdmLTRmNjQtYmMzYS0zNzJiZmJhYWVhZmMmY2FjaGU9djImd2lkdGg9MTE1Mg==)
 
-## Available actions
+3.  Choose `**HTTP Basic Access**` credential type
 
-Once connected, you can use Jamf Pro actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4Mjg4MzJlYi1lOTMzLTQ4YTEtOThlNS05MzcyZGZlY2M4MGUlMkY0LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0wOTgwZmM3MC1lMmVmLTRlMWQtOTg1Ny01OGEwNTNmYjJmOWMmY2FjaGU9djImd2lkdGg9MTE1Mg==)
 
-## Example use cases
+2.  Enter your JAMF Pro login email in the **`User name`** field and your password in the `**Password**` field.
 
-Common automation scenarios using Jamf Pro with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZiYjA0ZmQ0Yi04NzlkLTQ3NzktOTNkMS0zYTdiZmViYzRiNzclMkY1LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0zZjA2MzBiOC02YWZmLTQ3N2ItOWM3Ni0xOTBkOGE2MjYxNGQmY2FjaGU9djImd2lkdGg9MTE1Mg==)
+
+3.  Create a new flow and create an HTTP step.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZlODRmMDZjNC1iZGNiLTQwY2YtODRmMC0xZmExMWRiOGZhODMlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNDQuMDMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTQzZjIzYWE2LTZlOWEtNGE2MS1hZjFmLTI2MTE4YmE1YzExMCZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+4.  Select the **`POST`** method and insert the **`URL`**
+
+https://your\_instance.jamfcloud.com/api/v1/auth/token
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY0YzU2OTcxYi05OTc1LTRlZWEtOGFkZi00OTM3Yjg1ZmMxNzAlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNDUuMTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWE4MGY3MTkyLTg3YTItNDhmOC05M2U5LWNlYWJlZjE5NTBhZSZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+7.  Go to the **`Settings`** category of the step and select the credential you previously created in the vault.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3NGM5MGQxNy03ZmI5LTRiYWMtYTEwNC1lNDIxNTBlMThhMTYlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNDYuNDgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTk1N2JhMWEwLTQ4YjgtNGI2NS04MzQwLTEzMjRkYmQ5MzAyYyZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+6.  If you execute the step at this stage, you will successfully obtain a **`bearer token`**.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY2YjA1NzkzNi1kMjNhLTQxMWUtYmE2NS1iOGQxNDkxNGE0NGMlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNDkuMDUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTJjZTNkOGUzLTA1YWItNDZkMC1iOGY4LWYzMjc4NjBkYjliZSZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+7.  Go to the **`add step menu`** and click on the **`Setting wheel`****.**
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZlZmFiYWZhNi1iZWEwLTRkZjEtOTY3Ny0yY2ExN2YxNjBmMTQlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTEuMDkucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTFmNDAwOWFiLThiOWUtNDY4MC1hYmE0LWNhMzk2MmQ0OWFhNiZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+8.  Type JAMF in the **`search bar`**, click on JAMF, and select "Pro" integration by clicking on the small **`+`** button.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZjNjNlMzcyMy0zNGJjLTRhMWItYmYxMC1lZDE4ZWQ4NjU1MzglMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTIuMjgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPThhYzQ2MjI1LWYwNzEtNDdiZS1iN2ZkLTU0YTFhZDU3MjBlMyZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+9.  Return to your flow and click on the small **`+`** below the HTTP step.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZhYjI0MmY0NC1mYzVmLTQ5NzgtODM4MS0wZDNhYzMyMzNlNzklMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTIuNDkucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTU1MGNhYTMzLTA1NmMtNGU3MS1iNDQ5LTNmODVmYWY1YjZkZCZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+10.  Choose **`Jamf Pro`** integration, and select an **[`action`](/integrations/jamf-pro)**`**.**`
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZhM2E1MjE1ZS05NWQwLTQ4ZjgtOTdiYi0yNzBmYjU0ZWVlNjYlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTMuMzgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWVjOTFkOWM0LTlmN2EtNDMwNC05OGIzLTRmZjVkYWRkY2E3NyZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZhOTYxZDVjYS1lOTQ2LTQ5OWEtYTMwZi05ZGE5N2I3ZWI5OTAlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTMuNTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTg4NmM3NzMyLWVkOTEtNGMzNy1hYmFkLWQ0YTJiYTRjZTJjNSZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+13.  Configure your action, then **add a new** `**Header**` named **`Authorization`** with the value “Bearer “ (leave a space after Bearer).
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZmZTgxYzJkOC00MGU2LTQ4NDAtYTAzNC04NDA3MjU4Yjc1MGUlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTQuMTEucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWMxNTJjYWFkLThjN2YtNDhjOC1hMGM3LWJjMjkwZGEyZTIwOCZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+2.  Do a **`/`** and select your first HTTP step.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4NjZmOTUwZi01YjE1LTRkOWYtYWY2NC04YjU1OTMxMTg2MjAlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTYuMzkucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTlhNzcwMGEyLTJhODMtNDQ3Ni1hMzAzLWQwNzUzYzE5MDY3MiZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+3.  Pick the **`token`** field.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYzNzJmYzA0MS1iNjAwLTQ1YzItYWIyMi1kMzY3YzVkNjlhYzYlMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTYuNTMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTM0MzZjNTdiLWQzZjMtNGM4NS05MDFhLTk0OGJhMmY3NWZkMiZjYWNoZT12MiZ3aWR0aD0xMTUy)
+
+4.  Start your flow. Congratulations, you've just successfully completed your first flow with JAMF Pro! 🥳
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY0YTQ1MDdmYy05OGUzLTRkYmEtYTVjNi02ZWViNjgwYmYwOTklMkZTY3JlZW5zaG90XzIwMjMtMDctMThfYXRfMTUuNTcuMDcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWExMzE1ZGEzLTJiYzQtNDgyZC04YjUyLTAzYTAzMWI2YjRjYyZjYWNoZT12MiZ3aWR0aD0xMTUy)

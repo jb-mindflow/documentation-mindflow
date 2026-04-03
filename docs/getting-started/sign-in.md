@@ -1,20 +1,22 @@
 ---
-sidebar_position: 2
 title: Sign In
+sidebar_position: 2
 ---
 
 # Sign In
 
-Get started by creating your Mindflow account and signing in to the platform.
+Through this page, you will navigate our Sign-in process.
 
-## Creating an account
+You will find detailed instructions on the four authentication methods available: Self-service user registration, Admin invitation, multi-factor authentication, and single-sign on, empowering you to choose the most suitable and robust option for your needs.
 
-Visit [app.mindflow.io](https://app.mindflow.io) and follow the registration steps. You can sign up using your company email or through SSO if your organization has configured it.
+Discover how to create and manage your profile, customize it, and strengthen your account's security by learning how to change your password effectively. With this information at your fingertips, you can embark on your cybersecurity journey with the assurance that your access is not only streamlined but fortified against any potential threats
 
-## Signing in
+[![Authentication methods](https://www.notion.so/icons/verified_blue.svg?mode=light)
 
-Once your account is created, sign in at [app.mindflow.io](https://app.mindflow.io) with your credentials. If SSO is enabled for your organization, click the SSO button and enter your company domain.
+Authentication methods](/getting-started/sign-in/authentication-methods)[![Create your profile](https://www.notion.so/icons/profile_blue.svg?mode=light)
 
-## First-time setup
+Create your profile](/getting-started/sign-in/create-your-profile)[![Update your password](https://www.notion.so/icons/asterisk_blue.svg?mode=light)
 
-After signing in for the first time, you'll be guided through an onboarding flow to set up your workspace and configure your first integrations.
+Update your password](/getting-started/sign-in/update-your-password)
+
+* * *

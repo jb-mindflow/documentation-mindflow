@@ -1,24 +1,16 @@
 ---
+title: Google
 sidebar_position: 10
-title: "Google"
 ---
 
 # Google
 
-Google Workspace services (Gmail, Drive, Calendar).
+[![Credentials](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3MmU5OTg1MS03Mzk1LTRkZjQtYTNiNy04NjkxNDZjNTMxNTIlMkZhc3NldHMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTNlODg0NmUxLTYxYjMtNDJkOC1hZGExLWZiMDQ5NTU4YzJlZSZjYWNoZT12MiZ3aWR0aD0yMDA=)
 
-## Overview
+Credentials](/integrations/google/credentials)[![Gmail](https://image-forwarder.notaku.so/aHR0cHM6Ly9jZG4uaWNvbi1pY29ucy5jb20vaWNvbnMyLzI2MzEvUE5HLzUxMi9nbWFpbF9uZXdfbG9nb19pY29uXzE1OTE0OS5wbmc=)
 
-Learn how to connect Google to Mindflow and use it in your automation flows.
+Gmail](/integrations/google/gmail)[![Google sheet](https://image-forwarder.notaku.so/aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS81MTIvMjk2NS8yOTY1MzI3LnBuZw==)
 
-## Authentication
+Google sheet](/integrations/google/google-sheet)[![Google Chat](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E4ZDUxZTllYy01ZWJiLTRjZDktOGM0Ni03NzM5NzE4YzM4ZDQlM0FHb29nbGUtQ2hhdC1Mb2dvLTIwMjMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTFkZDI4YWFkLWJjZjYtNGJhZS1hODM0LTliNTgwMzIyMjlkOCZjYWNoZT12MiZ3aWR0aD0yMDA=)
 
-Configure your Google credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
-
-## Available actions
-
-Once connected, you can use Google actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
-
-## Example use cases
-
-Common automation scenarios using Google with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+Google Chat](/integrations/google/google-chat)

@@ -1,24 +1,14 @@
 ---
-sidebar_position: 3
 title: Basics
+sidebar_position: 3
 ---
 
 # Basics
 
-Understand the core concepts of Mindflow before building your first flow.
+If you're new to Mindflow, you should take a look at [this page](/6fa2d22aef9a4df3aec57fa5b1dde534), which gives you a product tour. Then let me introduce you to the basics: what are the prerequisites before starting building into Mindflow and key insights about visual programming into Mindflow.
 
-## Flows
+[![Prerequisites for automation](https://www.notion.so/icons/skip-backward_blue.svg?mode=light)
 
-A flow is a sequence of automated steps that Mindflow executes. Each flow has a trigger (what starts it) and one or more actions (what it does).
+Prerequisites for automation](/getting-started/basics/prerequisites-for-automation)[![Visual Mindflow language](https://www.notion.so/icons/translate_blue.svg?mode=light)
 
-## Steps
-
-Steps are the building blocks of a flow. Each step represents an action — such as calling an API, sending an email, or running a condition check.
-
-## Triggers
-
-Triggers define how a flow starts. Flows can be triggered manually, on a schedule, via webhook, or by an event from a connected service.
-
-## Integrations
-
-Integrations connect Mindflow to external services like Google Workspace, Microsoft 365, CrowdStrike, and more. Once connected, you can use their APIs as steps in your flows.
+Visual Mindflow language](/getting-started/basics/visual-mindflow-language)

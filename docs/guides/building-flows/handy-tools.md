@@ -1,16 +1,52 @@
 ---
+title: Handy tools
 sidebar_position: 7
-title: Handy Tools
 ---
 
-# Handy Tools
+# Handy tools
 
-Discover built-in utility tools that make your flows more powerful.
+The page compiles tips on how to become more efficient using Mindflow.
 
-## Available tools
+Learn how to leverage handy tools tailored for our platform, empowering you with shortcuts and magic features!
 
-Mindflow includes a set of utility tools for common operations like data transformation, text processing, date manipulation, and mathematical calculations.
+## Copy step
 
-## Using tools in flows
+You can copy any of your steps by clicking on the left side of the step and selecting `**Copy**`. Alternatively, you can use `**Command-C**`.
 
-Add a tool step just like any other step in your flow. Select the tool and operation, then configure the input parameters.
+Furthermore, you can also copy and paste steps from one flow to another, even if they are in different workspaces.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzA0MTExOTcyLWNjM2ItNDA5Ny1hMWI3LTJhMGRhNjdlODNhMi9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNDMuMzgucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODAyMy1hZGFiLWZkYjc2YTQwNmI4OSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4MjImc2lnbmF0dXJlPTdBZWRpLWxxeGxMemlmclpvUC0zVWpsYlU4SFRhX3NmaHFxOGg0a3BBS3c=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+## Move, copy, and duplicate playbooks
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzU5MjgzYjk3LTMxMWEtNGM4My1iNGQ0LWQ5MzlkM2VjNzdjMi9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNDUuMTUucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODAyYy1hMmI4LWQ4NzRhYjZjNjMyYyZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4NDUmc2lnbmF0dXJlPS10b0dQc282aEpYampZMi1zMzB2RWw1OXVLMlBOZlBQSkVGMmVpVXhPVjQ=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+To copy your entire playbook, return to the environment level, click on the three dots to the left of your playbook, and select `**Copy**`.
+
+Alternatively, you can duplicate your flow, and the duplicated playbook will appear in the same environment with the same title, followed by '(duplicated)'
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzkxMTIxYmQxLWE2ZmUtNDk4NC05YWZiLWVhMTE5ZjVkYmE0Yi9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNDcuMzkucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODBiNi05NTlkLWQxNDgxYjFjZDEwZSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4MzMmc2lnbmF0dXJlPTMwYXg0b3dCbkVwM0c2YklGSFN0MkZPZmxGeXVWa2k1WHRCT1dqVS1qYmM=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+Click on the left side of your playbook to access available actions. Then, select `**Move to**` to relocate playbooks between workspaces and choose the destination workspace.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzBjNGM5YjY3LWUzMzAtNDA4Ni1hODA2LTkzYjA1NWVjN2I1MC9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNDYuMDMucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODA4Yy1hYTQzLWZmMDYwNTE5ZTMxNyZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4MzEmc2lnbmF0dXJlPUxHc1ZkSkVtc0wxU0pPa0xmazEtQzRzU0dXclg5Q0ZxR1lYTE9faFZReDA=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+**To paste** your playbook. Click on the 3 dots on the right side near the button create a flow and then click on `**Paste flow**`. Open your playbook and edit your flow !
+
+## Notes
+
+To make your automation workflows more understandable, we highly recommend adding explanatory notes. These notes can provide information about the associated business requirements, the individuals involved, and any dependent tools.
+
+To add a note, simply right-click (as you would to add a step) and select `**Note**`.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzFlM2U2ZmJmLWYzNzctNDBhNy04ZmRkLTgxMTBlY2FjNjdiOC9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNTAuMjAucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODBhMC1hOGM0LWQ4NjZjOGFmNWZjYSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4MjImc2lnbmF0dXJlPWh4M25EakYzQmlkQWRMMEtvM0ZjYTEyYV82b25kUXFjaHJ3bjJEYzYwY2M=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2FiZjY1MDA2LTk4ZGMtNGQzMi04NjBkLTI5YzZhYWQwNzVkYy9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuNTIuMzAucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODA1My1hYjhlLWMzMjczM2E2NWQ2MSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTI4MjImc2lnbmF0dXJlPXUzaUhyTl9KRXF4OTV3YzNXNUlpRDNVRGtuemNqaXVZVWFjdWlRMkJ4ZGc=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+## Autolayout
+
+In the upper-right corner, you'll find a magic wand that allows you to effortlessly reorganize your flow! ✨ Just click on it to enjoy the flow reorganization. You can use this feature anytime you like.
+
+Alternatively, you can use the shortcut `**L**` for quick reorganization.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYzNjM5ZGRmNS1lYzViLTQ0YzQtYTIyYS1iNGQ2MDljNjg5MTAlMkZDYXB0dXJlX2RlY3Jhbl8yMDIzLTEwLTI0X2FfMTcuNTIuMTYucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTRiYjcxZTdlLTg3NTctNDZhOC1hYmY5LTNiNDQyMjQ0MDQzMiZjYWNoZT12MiZ3aWR0aD02NjEuOTMxODIzNzMwNDY4OA==)

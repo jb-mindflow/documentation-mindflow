@@ -1,20 +1,24 @@
 ---
+title: Reach out to services
 sidebar_position: 3
-title: Reach Out to Services
 ---
 
-# Reach Out to Services
+# Reach out to services
 
-Learn how to connect to external services and use their APIs as steps in your flows.
+The key to automation is interconnection with your tools. This section of our documentation delves into the art of seamless connectivity, teaching you how to reach out to services effortlessly.
 
-## Adding a service step
+Learn the nuances of sending raw HTTP requests, and mastering the language of the web to interact with APIs and web services directly. Discover how to send emails to ensure that crucial notifications and alerts reach the right recipients in real time.
 
-In the flow editor, add a new step and select the service you want to interact with. Choose the specific API operation from the available list.
+Additionally, explore the world of integration by connecting to third-party tools, expanding the horizons of your cybersecurity infrastructure.
 
-## Authentication
+[![Call native integrations](https://www.notion.so/icons/share_purple.svg?mode=light)
 
-Each service requires authentication. Configure credentials for the services you want to use, and Mindflow will handle authentication automatically when executing flows.
+Call native integrations](/guides/building-flows/reach-out-to-services/call-native-integrations)[![Send raw HTTP requests](https://www.notion.so/icons/snippet_purple.svg?mode=light)
 
-## Working with API responses
+Send raw HTTP requests](/guides/building-flows/reach-out-to-services/send-raw-http-requests)[![Handle timeout](https://www.notion.so/icons/stopwatch_purple.svg?mode=light)
 
-Service steps return data that you can use in subsequent steps. Access response fields using Mindflow's data mapping interface.
+Handle timeout](/guides/building-flows/reach-out-to-services/handle-timeout)[![Send emails](https://www.notion.so/icons/invitation_purple.svg?mode=light)
+
+Send emails](/guides/building-flows/reach-out-to-services/send-emails)[![Sending emails over SMTP](https://www.notion.so/icons/username_purple.svg?mode=light)
+
+Sending emails over SMTP](/guides/building-flows/reach-out-to-services/sending-emails-over-smtp)

@@ -1,24 +1,26 @@
 ---
+title: VirusTotal
 sidebar_position: 26
-title: "VirusTotal"
 ---
 
 # VirusTotal
 
-File and URL threat analysis.
+## Credentials
 
-## Overview
+Reference: [https://developers.virustotal.com/reference/authentication](https://developers.virustotal.com/reference/authentication)
 
-Learn how to connect VirusTotal to Mindflow and use it in your automation flows.
+Procedure:
 
-## Authentication
+1.  Click on profile
 
-Configure your VirusTotal credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+2.  Pick `API key`
 
-## Available actions
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZjNzQwYjJiYi03ODczLTQ4MTEtYjk4OS05MjVhZGZmYjlkZmIlMkZVbnRpdGxlZC5wbmc_dGFibGU9YmxvY2smc3BhY2VJZD01NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYmaWQ9NzE2NmFjZTEtODhiMC00MjVmLTkzNTctYzYyMDQyYmUzYWFiJmNhY2hlPXYyJndpZHRoPTI0MDA=)
 
-Once connected, you can use VirusTotal actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+3.  Copy personal or premium API key
 
-## Example use cases
+4.  Create a HTTP API Key, named `x-apikey` under Vault in Mindflow
 
-Common automation scenarios using VirusTotal with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+5.  Set position as Headers and paste VirusTotal as value
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYxOGY0MjFhZS1iY2M2LTQzMjAtOTE4Ny01OTVmMjc4YjU4MjIlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTI0X2FfMTQuMzAuMjEucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTVjNjI0YTBmLWMyOWQtNGRmMi1iMmQwLTE2NDdkZTk1NGRmOCZjYWNoZT12MiZ3aWR0aD03Njg=)
