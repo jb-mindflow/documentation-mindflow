@@ -1,24 +1,84 @@
 ---
+title: Wiz
 sidebar_position: 27
-title: "Wiz"
 ---
 
 # Wiz
 
-Cloud security and compliance.
+**Service Overview:** Wiz is an advanced security software designed to safeguard sensitive data and IT infrastructure. With an innovative approach to enterprise security, Wiz provides a comprehensive solution for threat detection, prevention, and response, all within a user-friendly interface.
 
-## Overview
+### **Available API Calls and Action Items**
 
-Learn how to connect Wiz to Mindflow and use it in your automation flows.
+-   Download a Report in Wiz
 
-## Authentication
+-   Get All Cloud Configurations Rules in Wiz
 
-Configure your Wiz credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+-   Get All Open Issues (First Call) in Wiz
 
-## Available actions
+-   Get All Open Issues (Paginations) in Wiz
 
-Once connected, you can use Wiz actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+-   Get Cloud Configuration Report in Wiz
 
-## Example use cases
+-   Get High-Critical Open Issues in Wiz
 
-Common automation scenarios using Wiz with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+-   Get Login Token in Wiz
+
+-   Get My Report in Wiz
+
+-   Get Open Issues Trend Card in Wiz
+
+-   Get Rejected Issues in Wiz
+
+-   Get Resolved Issues in Wiz
+
+-   Update Issue Status to In Progress in Wiz
+
+-   Update Issue Status to Open in Wiz
+
+-   Update Issue Status to Rejected-By in Wiz
+
+-   Update Issue Status to Rejected-Exception in Wiz
+
+-   Update Issue Status to Rejected-False in Wiz
+
+## **Getting Started with Wiz**
+
+1.  Select a new HTTP step from the operations menu.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZhNDBjMGMwMC00NWIxLTQyOWQtYjkwZS01ODkxZTJiNTlmNWUlMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNDkuMTcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTMxNTQ3MjcyLWFlYmItNGEwYS1iMzY2LTg3ZGI3ZWQzMGYzYyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+2.  Fill in the fields as shown in the screenshot
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZmMDNkYTg0NS04MjI1LTQ4MjktYTg5Ni02YTRiOThkYTllYTElMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTAuMTcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWEwZjVhZGNiLWFlYjYtNDNkZS1iMmU0LWMxZGQwOWQyMGFkNyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+3.  Then run the operation with the button ▶️, and you should get a code 200 with the precious access token
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYwZTc5NzA2Yi0xZTA0LTQyODctODQzYi01M2E2NGZjYjdlNzklMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTAuNTgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTQ4ZmQ1ZjAwLWM5OWYtNDY5YS1hMjFhLWY0NjRiNzcxYTQxMiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+4.  Return to the operations menu and select the gear button to add the Wiz integration
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZhMTc3MmI1NS03NjcyLTQxMjgtYTJmMi0xZmM2YzdlZDAyNzAlMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTEuMTUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTQ3OGJkY2IwLTcwNzItNGU5MC04MTBmLWM5NWY4Y2IyYmMzYiZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+5.  Search for Wiz in the search bar, select Wiz and click on the **`+`** button with your cursor over the integration.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkY4NDZjZmI3My05NTYwLTRhNWYtYmU3MS1hMmM3NzA1MmM5NzAlMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTEuMjcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTdiOTM2MDljLTM5NTktNDhmNy05YWFkLWJiMzcxNTM2MTJiNyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+6.  Return to the flow and access the operations menu. Search Wiz and choose an operation
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYwOTU0NTkyMy0yNzlkLTRjYjYtYWE4MC0wZDlhZWNlMGU4ZDclMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTQuMjkucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTdlNjJjOWI2LWU1ZGUtNGRhNy1hNmU1LWE1NjkxOWQyZjFhNSZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+7.  Fill in the required fields and click the Add an item button in the Header section.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYyYWQwNGI4MC1iZDUyLTQ4OTMtYTEwMS03MzU2MmQ3N2Q0MGElMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTUuMTMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTBmNTNmZjJhLTJjNDItNDQyNi05OTVjLWM2YWM3MWNjMmIxOCZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+8.  Fill it with Bearer, leave a space and put a / to see the data selection menu appear, then click on Authentication and click on the last iteration.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkY2NGQyMzQ3Mi0yYTYwLTQxMTktOTgwMi00ZjllN2NmMjA3NDklMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTUuMzIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTY2MjRiYWIzLTQ2MTctNGEyNy1iMWQ4LWJkYzZiNWUyYzM2ZSZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+9.  Select "access token" data
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZjMjgzNmFkNC1kMThlLTRjZmQtYjFhMS04NzY3NGQ3ZjNjYTclMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTUuNDgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTEyYTgwYTM1LWYxYzQtNDIyMy05YjBkLWQ1ZTFjZDFmZGY3NyZjYWNoZT12MiZ3aWR0aD0yNDAw)
+
+10.  Start the operation with the button ▶️. Congratulations, you've created your first functional Wiz operation.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkY0MmQ5NjgxNy01N2QwLTRjOGMtYmZmNC1iM2M1NDQxNzRjN2QlMkZTY3JlZW5zaG90XzIwMjMtMDktMTFfYXRfMTcuNTUuNTgucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTQ3ZWY0YTFiLWEyODgtNDgwYS1hZGVlLTIwODk2MDhmYTgxYyZjYWNoZT12MiZ3aWR0aD0yNDAw)

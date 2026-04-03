@@ -1,24 +1,94 @@
 ---
+title: SentinelOne
 sidebar_position: 21
-title: "SentinelOne"
 ---
 
 # SentinelOne
 
-Autonomous endpoint security.
+## Credentials
 
-## Overview
+Procedure:
 
-Learn how to connect SentinelOne to Mindflow and use it in your automation flows.
+-   Connect to your SentinelOne account
 
-## Authentication
+-   Create API token
 
-Configure your SentinelOne credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+-   On your profile menu, pick `My User`
+-   Click `Option Menu`
+-   Click `Regenerate API Token`
 
-## Available actions
+**Screenshots**
 
-Once connected, you can use SentinelOne actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZhODU0MzNhYS03YmFlLTRiMTEtYjMxZi1hZTMwNTk4OTMwYmYlMkYxLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0zYmQwZDI1MS02NjFkLTQ4OWMtYmQ1Yy02YmFkZWJlNzJhNWUmY2FjaGU9djImd2lkdGg9MjQwMA==)
 
-## Example use cases
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY0M2NhNzYxYS1lYTU1LTRlYzQtODdmYi0zNzdmNTYyNGYxZmYlMkYyLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0xYzdiZTgwZS0wNTA4LTQwMmEtYmU0OC1kMmI0OTMyNjIyMWEmY2FjaGU9djImd2lkdGg9MjQwMA==)
 
-Common automation scenarios using SentinelOne with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY5NDYzZjRkYi0xNjRiLTRmOTYtYTI1My1iMmJlYmMwMThjNzglMkYzLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1kYjAzMWJjMS02Mzg0LTQ5MGItOTQ2NS0xOTA4MGMwYjE1NmImY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYzNTQ2Y2ZlZS02Y2QxLTQ0ZGUtOGJlYy03NmYxOWUxYjI5MmIlMkY0LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0wN2ZlOTMyOS1hNzYxLTRjNDctYTgzOS0yOGM5ZDYzODAyMTYmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+## Enroll a PC (Mac)
+
+Procedure:
+
+1.  Install SentinelOne Agent
+
+-   Connect to your SentinelOne account
+
+-   Go here: [https://adista.sentinelone.net/sentinels/packages](https://adista.sentinelone.net/sentinels/packages)
+
+-   Select the version you want and click on the download icon
+
+-   Save the site token obtainable here: [https://adista.sentinelone.net/sentinels/siteInfo](https://adista.sentinelone.net/sentinels/siteInfo)
+
+-   Install the Agent and follow the steps
+
+-   Insert the site token
+
+**Screenshots**
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZmNjYyNjNlNi1lNDBkLTQ2Y2ItYTU4My1kMWQwOTE1NTlmYzElMkYxLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD01MmYzNDJjNC0zNWE5LTQ2YzUtOGQzOC1kNmNlYTFjMGIxZDYmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkYwNmJkNzMwZi0wN2FjLTQ0M2ItODRiZC1iYThlMWYwZDNkYWYlMkYyLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1iMTczYWRiNS1jMzhmLTRiZGYtOTVjYi0yYWMyYzk0NGZkYzQmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY1NWZkNTcwMC0wNmY3LTRiOWEtOTUzNi02YmEyMmUxODZlNmQlMkYzLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD03MDc1YzkwMi1hMTlmLTQzYTctYTRjNi01OWU4OWVmM2QyMjImY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+2.  Authorizing Full Disk Access
+
+-   Open `System Preferences`
+
+-   Select `Security & Pricavy`
+
+-   Select `Full disk access`
+
+-   Click on the `Cadena` at the bottom left
+
+-   Allow `sentineld`sentineld and `sentineld_help`
+
+**Screenshots**
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY2ZmM5MTA5YS1hYjY1LTRlYzUtOTQyNS02ZGQ1NTY2YjQyY2MlMkYxLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0xZTBiMzEzOC04OGFkLTQ3ZTYtYTVmMC0zODIyNTg5MDg1MjImY2FjaGU9djImd2lkdGg9MjA2OA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY5MjE4OWFkNC02NzVlLTQ1MmUtOGViNS05NTU4MDRmMzJkOGIlMkYyLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1mODVmMmFlZS03ZWUzLTQ4MTYtYjkyZi1hMzNhOWU5YjU1MjMmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY2ZDZkMjRmYS05NGU4LTQ1OWQtOTU1Mi0wNWIzZmQzZDQ4ZDMlMkYzLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1kYzMzMmQwNC1jY2Y3LTRiMzctYjNlYS0wZTY2MjU1YjQ1ZDMmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY3M2U1MDJjNC1hOTg0LTRiMjUtOWY0Ny1hYTIwMWVlMTVkZGElMkY0LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1jMGJkNDFmMi1iOTYxLTQ1ZTktOWMwNy05ODBmNjkyMDIxZTgmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+## Add a recipient for alerts
+
+Procedure:
+
+-   Go to the `Settings` tab
+
+-   In the `Settings` tab, go to the `Notifications` category
+
+-   Click on `New Recipient`New Recipient and indicate the desired email
+
+**Screenshots**
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkY4YThiNDFlMS1iNTY2LTQ3YWMtYTMyNS1lZjRjN2RmNGIyYWElMkZDYXB0dXJlX2RjcmFuXzIwMjItMDItMDRfXzExLjEzLjUxLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD01NDdjZmM2ZS01YWVjLTRkZmItYjE2Ni02ZTBlZDZlNjRiYWYmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZiNjkwODc5MS1hODQwLTRmN2YtOTFhNC0wMDBlNWI1NWUwNDclMkZDYXB0dXJlX2RjcmFuXzIwMjItMDItMDRfXzExLjE0LjEwLnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1jN2E3YTgyZS1mZjJjLTRhOWYtOTNiMC1lYmVhOWZiNzlmOTkmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkZzZWN1cmUubm90aW9uLXN0YXRpYy5jb20lMkZmYTNkMzg0Mi05M2I4LTQxZDEtYjczNS0xYzE1YmRmMTliZTIlMkZDYXB0dXJlX2RjcmFuXzIwMjItMDItMDRfXzExLjE0LjU3LnBuZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD00NWUwYjgxOS1lMjdhLTQ2NzQtOTZjNy05OWUyNzc3OWUzZDYmY2FjaGU9djImd2lkdGg9MjQwMA==)

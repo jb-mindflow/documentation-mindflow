@@ -1,18 +1,29 @@
 ---
-sidebar_position: 1
 title: Overview
+sidebar_position: 1
 ---
 
 # Overview
 
-Mindflow is a no-code automation and orchestration platform designed to help teams streamline their workflows across IT, security, and business operations.
+Mindflow is an agentic automation platform that helps teams connect tools, transform data, and orchestrate actions across their stack.
 
-With Mindflow, you can connect hundreds of services, automate repetitive tasks, and build complex workflows — all without writing a single line of code.
+It combines a visual flow builder, secure environments to isolate work, and credentials to authenticate to third‑party services. AI capabilities can be used to generate content, reason over inputs, and execute tasks as part of an automated workflow.
 
-## Key capabilities
+:::note
+💡
+:::note
+If you are new to Mindflow, start with the key concepts below. Each page explains one core building block and how they fit together.
+:::
+:::
 
-Mindflow enables you to visually design automation flows, connect to your existing tools via pre-built integrations, and execute complex multi-step processes. The platform supports conditional logic, loops, AI-powered actions, and nested flows for advanced orchestration scenarios.
+### Key concepts
 
-## Who is it for?
+[![Environment](https://www.notion.so/icons/archive_blue.svg?mode=light)
 
-Mindflow is built for SOC analysts, IT operations teams, DevOps engineers, and any technical professional looking to automate manual processes without relying on engineering resources.
+Environment](/getting-started/overview/environment)[![Credentials](https://www.notion.so/icons/lock-keyhole_blue.svg?mode=light)
+
+Credentials](/getting-started/overview/credentials)[![Integration](https://www.notion.so/icons/hammer_blue.svg?mode=light)
+
+Integration](/getting-started/overview/integration)[![Flow and Agent](https://www.notion.so/icons/profile_blue.svg?mode=light)
+
+Flow and Agent](/getting-started/overview/flow-and-agent)

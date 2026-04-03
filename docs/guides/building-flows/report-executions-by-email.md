@@ -1,16 +1,49 @@
 ---
+title: Setting Up Email Alerts with Mindflow
 sidebar_position: 6
-title: Report Executions by Email
 ---
 
-# Report Executions by Email
+# Setting Up Email Alerts with Mindflow
 
-Configure email notifications to stay informed about your flow executions.
+Email notifications are essential in automation by providing instant alerts and updates. They ensure timely communication regarding the status of processes and enable prompt responses to critical events.
 
-## Setting up email reports
+The email alert feature in Mindflow allows users to receive notifications about the status of playbook executions, eliminating the need to manually check the platform. Within the settings menu, users have the option to customize the level of alerts they wish to receive.
 
-Add an email step at the end of your flow to send execution summaries. Include data from previous steps to create detailed reports.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYwODM4MzlmNy0yMTk2LTRjNzUtYjQ3MS02ZTU3YmEzY2Q0MGQlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTIzX2FfMTcuMTIuMjMucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTRmNGUyNjU4LTYyZWItNDA4ZC1iYTdmLWVlNmZhNDVkNGEyNiZjYWNoZT12MiZ3aWR0aD02NjEuOTYwMjA1MDc4MTI1)
 
-## Notification templates
+**By default, playbooks are configured to not send notifications**. To receive notifications, users must actively configure their preferences for each playbook on an individual basis.
 
-Customize your email templates with dynamic content, status indicators, and formatted data tables.
+## 1\. On Failure
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2JhNDFhMWJmLWZhMGItNDRkZi1iZjQ3LWEyYjg2OWIzZjJmMi9DYXB0dXJlX2RlY3Jhbl8yMDI1LTAyLTEzX2FfMTIuMTYuNTkucG5nP3RhYmxlPWJsb2NrJmlkPTdjMzAyODNkLWZhNWEtNGRhNS1hYzUwLWU5OTE3ZmQyZjNlOCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0OTEzOTQmc2lnbmF0dXJlPWhJRXhkYmtlOElNTFU4QUlNcHZVd0tkQ3ZKR24yUDdQZlFFY1ptWGotazg=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+You can mention multiple addresses or send this notification to another playbook using the email hook.
+
+Upon playbook failure, an email notification will be sent to the specified recipients in the following format:
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYwYWYzMTAxNi01ZGE4LTQ2NDQtOTU2NS0yY2E1ZmE2NDM3YjAlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTIzX2FfMTcuMjIuMTIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWYyNzA5NDA2LWUxMmUtNDFkNi04NjYxLWRiNmQwZTA3YzVlMCZjYWNoZT12MiZ3aWR0aD0xMTc3Ljk4MjkxMDE1NjI1)
+
+The reason for the playbook failure is indicated in **red**. In this particular instance, the cause of the failure is: Data referenced by `query` was not present in the webhook payload.
+
+:::note
+💡
+:::note
+You can end the playbook with a condition that assesses whether the execution was successful or not. In the event of failure, you can specify an error message in the Failure step (as shown in the image) that will be included in the email notification.
+:::
+:::
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkYxZDE4OTI3YS1iYjA3LTQ0NGUtOTE1OS0zZWU5ODUzYmI4NWElMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTIzX2FfMTcuMzQuMzEucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPWI2MmI1YjUzLTBkZDgtNGY4Zi05ZmY2LTBjZjBhYjE3Y2VmZiZjYWNoZT12MiZ3aWR0aD03Njg=)
+
+And the result is :
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZiNTgwMmNlMi0zMjU0LTQ5Y2YtOGI0ZS1lYWYyNGE5NmFhMGYlMkZDYXB0dXJlX2RlY3Jhbl8yMDIzLTEwLTMxX2FfMTEuMTYuNDUuanBlZz90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD1mNTU1YTZiZS05ZGViLTQ1ZjYtYmVlOC1mNjJiMjY5OWRjNjAmY2FjaGU9djImd2lkdGg9MjQwMA==)
+
+## 2\. On Success
+
+The procedure remains the same, with the distinction that the email will only be received upon successful execution.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZkYTQ5OGJjMi1lMzhiLTRiNjItOTNkOC1hYWRhNTI4YmExNGYlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTIzX2FfMTcuMzcuNDUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTVhOWYwMjY1LTJiMjYtNGI2MC1iMmQ3LTI3ZTliYzQ1ZDBlOCZjYWNoZT12MiZ3aWR0aD03Njg=)
+
+## 3\. Always
+
+With this option, you will be notified for each run, whether successful or not.

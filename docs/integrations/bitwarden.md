@@ -1,24 +1,24 @@
 ---
+title: Credentials
 sidebar_position: 4
-title: "Bitwarden"
 ---
 
-# Bitwarden
+# Credentials
 
-Password management and secrets.
+Reference: [https://bitwarden.com/help/public-api/](https://bitwarden.com/help/public-api/)
 
-## Overview
+Procedure:
 
-Learn how to connect Bitwarden to Mindflow and use it in your automation flows.
+1.  Click on profile picture
 
-## Authentication
+2.  Clik on `My Account`
 
-Configure your Bitwarden credentials in Mindflow to enable API access. Follow the setup guide to obtain the required API keys or OAuth tokens.
+3.  Scroll down and Click on `View API Key`
 
-## Available actions
+4.  Entrer you password
 
-Once connected, you can use Bitwarden actions as steps in your Mindflow flows. Browse the available operations in the flow editor when adding a new step.
+5.  Copy/paste your Client ID & Client Secret
 
-## Example use cases
+6.  Inside Mindflow, create a credential
 
-Common automation scenarios using Bitwarden with Mindflow include event-driven workflows, data synchronization, and automated responses to alerts.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkY0ZGI1ZmVkNi0wZWNlLTRiNGMtOGQ5ZC01Y2FiM2Y3ZjdmMzMlMkZDYXB0dXJlX2RlY3Jhbl8yMDI0LTA5LTI0X2FfMTQuNTUuMjUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTEwYjkzYTA4LTBhYjAtODA2NC04MTk5LWNjNDQ5Y2ZlZDExOCZjYWNoZT12MiZ3aWR0aD05NjA=)

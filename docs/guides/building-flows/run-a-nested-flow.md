@@ -1,16 +1,26 @@
 ---
+title: Run a nested flow
 sidebar_position: 5
-title: Run a Nested Flow
 ---
 
-# Run a Nested Flow
+# Run a nested flow
 
-Break complex automations into manageable pieces by calling one flow from another.
+Using the **Step HTTP Request**, you can break down a complex playbook into smaller, reusable components known as nested playbooks. As discussed in another tutorial on asynchronous steps, it's possible to wait for a response from the nested playbook before proceeding with the execution of the parent playbook.
 
-## Why use nested flows
+For instance, I'll create a playbook called 'Nested Playbook' with the sole purpose of responding with the message: 'Nested Playbook works well' to my parent playbook.
 
-Nested flows promote reusability and maintainability. Build common operations as standalone flows and call them from multiple parent flows.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2I3NTEwMTkwLWY4NzMtNDc1Mi1iZGFiLWNkYjA3ZTFlYjNlOS9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuMjEuNDYucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODBmZS04MzQyLWVlOTFlZGY5YTU5OSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0ODk4MzQmc2lnbmF0dXJlPUFOS25JZk8yV3pkam8tb0R2ZVZkRUtxenplU0NacGtXTjZ6QXBmZTY1NGs=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
 
-## Configuring nested flow steps
+You need to copy the webhook URL of this nested playbook and paste it to the HTTP Request within our main playbook.
 
-Add a "Run Flow" step and select the flow you want to call. Pass input data and receive output data back in the parent flow.
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzdhNDAwYzJiLTc1YjctNDlkNC1iNjcyLWUwMjkwNzQ0ZmRkYS9TY3JlZW5zaG90XzIwMjUtMDItMTdfYXRfMTQuMjYuMjkucG5nP3RhYmxlPWJsb2NrJmlkPTFhNDkzYTA4LTBhYjAtODBjNy1iMDY4LWRiZDkzNTAzODg3ZSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDE0ODk4Mzcmc2lnbmF0dXJlPXlESEhieW0yZ0VnaUZibnZ1NXJQZmZWZmEtSDVnbWlHWjZzZE1DendJUlE=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+
+Inside the body of this step, you must specify the **`Resume Webhook URL`** so that the child playbook uses this URL to send the response.
+
+Our child playbook look like this.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkZiZjZkYjI4NS1lNWZkLTQ1MWMtYTllYy05YTlmOTA2OGY2MTUlMkZDYXB0dXJlX2RlY3Jhbl8yMDIzLTExLTAyX2FfMTcuMDIuMDIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTdhMzRlMGJkLTY4NjgtNDc5Mi1hOTExLWI2Mzc2OGNjY2ZmZCZjYWNoZT12MiZ3aWR0aD05NjA=)
+
+When we execute our main playbook, we observe asynchronous execution occurring, and the nested playbook returns the message.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2h0dHBzJTNBJTJGJTJGcHJvZC1maWxlcy1zZWN1cmUuczMudXMtd2VzdC0yLmFtYXpvbmF3cy5jb20lMkY1NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYlMkY5YmZkZTE4Ny01NGVjLTRkY2EtODYzZS04MGYzMDM1ZjkwYmIlMkZDYXB0dXJlX2RlY3Jhbl8yMDIzLTExLTAyX2FfMTcuMTMuMjIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI0MWE3MDQ3LWZkZWItNDM5My05MDZlLTRjYThkNTVlNjE4ZiZjYWNoZT12MiZ3aWR0aD0xMTUy)
