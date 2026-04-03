@@ -1,0 +1,77 @@
+/**
+ * Mindflow Help Center - Custom Docusaurus Theme
+ * Brand colors derived from mindflow.io
+ */
+
+:root {
+  --ifm-color-primary: #6c5ce7;
+  --ifm-color-primary-dark: #5a48e0;
+  --ifm-color-primary-darker: #5140dc;
+  --ifm-color-primary-darkest: #3a29c9;
+  --ifm-color-primary-light: #7e70ee;
+  --ifm-color-primary-lighter: #877af1;
+  --ifm-color-primary-lightest: #a197f5;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(108, 92, 231, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a29bfe;
+  --ifm-color-primary-dark: #8b82fe;
+  --ifm-color-primary-darker: #7d73fd;
+  --ifm-color-primary-darkest: #4f42fd;
+  --ifm-color-primary-light: #b9b4fe;
+  --ifm-color-primary-lighter: #c7c3fe;
+  --ifm-color-primary-lightest: #eeedff;
+  --docusaurus-highlighted-code-line-bg: rgba(162, 155, 254, 0.15);
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #1a1a2e;
+}
+
+/* Card styling for homepage */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .card {
+  background-color: #16213e;
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* Sidebar customization */
+.menu__link {
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+/* Footer */
+.footer--dark {
+  background-color: #0f0f23;
+}
+
+/* Better code blocks */
+pre {
+  border-radius: 8px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}

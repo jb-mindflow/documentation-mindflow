@@ -1,0 +1,12 @@
+feature:
+  label: Feature
+  permalink: /feature
+  description: New features and capabilities
+improvement:
+  label: Improvement
+  permalink: /improvement
+  description: Enhancements to existing features
+fix:
+  label: Fix
+  permalink: /fix
+  description: Bug fixes and corrections
