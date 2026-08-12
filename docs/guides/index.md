@@ -20,4 +20,6 @@ Administrating the platform](/guides/administrating-the-platform)[![AI··Rooms 
 
 AI··Rooms : Turning prompts into powerful actions](/guides/airooms-:-turning-prompts-into-powerful-actions)[![Import a flow from our template library](https://www.notion.so/icons/arrow-down-line_pink.svg?mode=light)
 
-Import a flow from our template library](/guides/import-a-flow-from-our-template-library)
+Import a flow from our template library](/guides/import-a-flow-from-our-template-library)[![AI··Task: A simple guide](https://www.notion.so/icons/robot_pink.svg?mode=light)
+
+AI··Task: A simple guide](/guides/aitask:-a-simple-guide)

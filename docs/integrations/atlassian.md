@@ -16,7 +16,7 @@ It is not possible to use the Jira API to perform automated actions **without as
 
 Atlassian OAuth 2.0 Application](/integrations/atlassian/atlassian-oauth-2.0-application)[![Atlassian Jira Api key](https://image-forwarder.notaku.so/aHR0cHM6Ly9jZG4ud29ybGR2ZWN0b3Jsb2dvLmNvbS9sb2dvcy9qaXJhLTEuc3Zn)
 
-Atlassian Jira Api key](/1c293a080ab080ee85a2ebf1f8a95bbe)
+Atlassian Jira Api key](/integrations/atlassian/atlassian-jira-api-key)
 
 Reference: [https://developer.atlassian.com/server/jira/platform/webhooks/](https://developer.atlassian.com/server/jira/platform/webhooks/)
 
@@ -28,7 +28,7 @@ Procedure:
 
 -   Open `System` settings
 -   Under `Webhooks` section, `Create a Webhook`
--   Refer to to configure the `URL` pointing to the associated playbook
+-   Refer to [](/#e098912ed7d947daa00b8b0c0f535405)to configure the `URL` pointing to the associated playbook
 -   Selects the Jira necessary events to trigger
 
 Screenshots

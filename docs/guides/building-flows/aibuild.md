@@ -30,16 +30,34 @@ Additionally, you can use this chat feature to make inquiries about specific ser
 
 Create a new flow and click on `Ask AI to generate steps`
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2VlOTk4ZWQ5LTVkMmMtNDRkOS1hZDBlLWQyODM5Y2U5NjVhNC9TY3JlZW5zaG90XzIwMjUtMDUtMTlfYXRfMTQuMjMuMTAucG5nP3RhYmxlPWJsb2NrJmlkPTIwMTkzYTA4LTBhYjAtODAwNi1iZGRjLWQ5NjZkZDIxYTIzZSZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTMxNjgmc2lnbmF0dXJlPU5rZ1ZwQ3dwc1V4eUVhbGwwMFZVUEZVRThfcEZWU3JoQXhkQVhLTUNLQUE=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0FlZTk5OGVkOS01ZDJjLTQ0ZDktYWQwZS1kMjgzOWNlOTY1YTQlM0FTY3JlZW5zaG90XzIwMjUtMDUtMTlfYXRfMTQuMjMuMTAucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTIwMTkzYTA4LTBhYjAtODAwNi1iZGRjLWQ5NjZkZDIxYTIzZSZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
 In our case let’s ask AI to generate steps after a couple of existing one as follows, where in the transform data step “data to be analyzed” you can find a URL to analyzed by our tool VirusTotal.
 
 By clicking in the right place on your playbook, you enable the AI to add the right step. In our exemple, by clicking on the button, `Ask AI to generate Steps` under `Data to be analyzed` let the AI add the next step for us and find the best endpoint for our need !
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzY1NGMxZjAyLTdkNjEtNDIyNS04NjhlLTJlNzdkMzEyMzA2Ny9TY3JlZW5zaG90XzIwMjUtMDUtMTlfYXRfMTQuNTUuMTEucG5nP3RhYmxlPWJsb2NrJmlkPTIwMTkzYTA4LTBhYjAtODBjZS1hYzczLWU5ODBkNDZmMWQ3NyZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTMxNzMmc2lnbmF0dXJlPTE4Yk52amxlRy13RlY1djhOVnBYRnZ0dm02VHNDWFAxVnFfTS12cEFSLWs=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E2NTRjMWYwMi03ZDYxLTQyMjUtODY4ZS0yZTc3ZDMxMjMwNjclM0FTY3JlZW5zaG90XzIwMjUtMDUtMTlfYXRfMTQuNTUuMTEucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTIwMTkzYTA4LTBhYjAtODBjZS1hYzczLWU5ODBkNDZmMWQ3NyZjYWNoZT12MiZ3aWR0aD0yNDAw)
 
 By using the `@` we can select the service we want to use. Let’s prompt the AI : `Using @VirusTotal analyze the URL from the previous step` like so :
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzg5Y2Y0OTg4LTVjOGEtNGVmNy1iMzA1LWY3NDkzZTAwMzA3ZC9TY3JlZW5fUmVjb3JkaW5nXzIwMjUtMDUtMTlfYXRfMTQuZ2lmP3RhYmxlPWJsb2NrJmlkPTIwMTkzYTA4LTBhYjAtODA0Zi04NTkzLWUwOTcyM2NlYjhiZiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTMxNzEmc2lnbmF0dXJlPWRhRnZkVURQQ2lZTDBTcEIwMENfdEpFX2hRb0p5X0pRVDlWaVdMS3pSZHc=.gif?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E4OWNmNDk4OC01YzhhLTRlZjctYjMwNS1mNzQ5M2UwMDMwN2QlM0FTY3JlZW5fUmVjb3JkaW5nXzIwMjUtMDUtMTlfYXRfMTQuZ2lmP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTIwMTkzYTA4LTBhYjAtODA0Zi04NTkzLWUwOTcyM2NlYjhiZiZjYWNoZT12MiZ3aWR0aD0xNjIw)
 
 Don’t forget to add in the setting the API key and replace the placeholder with the relevant data !
+
+### **AI··Note: Automatically document your flow**
+
+AI··Note helps you keep clear and up-to-date documentation directly inside your flow. With one click, Mindflow generates a readable description of the automation and displays it next to the workflow, so anyone reviewing the flow can quickly understand what it does.
+
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0EwZjIzNjNmZS02ZTIxLTQ5NzItYmIyZS0xNTJkZGQwOGZlOGIlM0FTY3JlZW5fUmVjb3JkaW5nXzIwMjYtMDQtMjBfYXRfMTQuMjguMjIuZ2lmP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTM0ODkzYTA4LTBhYjAtODA4OC1iM2VjLWZjZjQ4ZjM0NWU5NiZjYWNoZT12MiZ3aWR0aD0xMjQ4)
+
+With AI··Note, you can:
+
+-   Understand the purpose of a flow at a glance.
+
+-   Make complex automations easier to review and share.
+
+-   Speed up onboarding for SecOps, CloudOps, ITOps, and other teams.
+
+-   Keep workflow documentation closer to the automation itself.
+
+-   Reduce the risk of outdated or missing documentation.

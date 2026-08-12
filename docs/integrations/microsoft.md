@@ -49,6 +49,12 @@ Teams](/integrations/microsoft/teams)
 
 The Teams API (part of Microsoft Graph) allows you to automate channel creation, post messages, and manage membership. It is essential for building bots or "ChatOps" workflows that integrate external triggers directly into a collaboration space.
 
+[![Creating Subscriptions on Resources](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E3NjQ4ZmJhOC02NGE1LTRhNzctOTA0OS1jNjgxMDUzZThiMGYlM0FHcmFwaHRvb2xraXQud2VicD90YWJsZT1ibG9jayZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZpZD0zNDI5M2EwOC0wYWIwLTgwNmYtYjMyOS1kMDZiZmIzYzVkYTkmY2FjaGU9djImd2lkdGg9MjAw)
+
+Creating Subscriptions on Resources](/integrations/microsoft/creating-subscriptions-on-resources)
+
+The Change Notifications API is a powerful tool allowing users to subscribe to resources within their Microsoft tenant (Exhange, SharePoint, Teams, etc.). It is essential for allowing users to create workflows reacting on dynamic events happening within their Microsoft tenant.
+
 [![Kusto Query Language (KQL)](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0EyNTZjMjA4My1lZDI4LTQxZmEtYmIzMC03M2M2ODFjZjk0NzQlM0FHcmFwaF9BUElfbG9nby5wbmc_dGFibGU9YmxvY2smc3BhY2VJZD01NTY0M2I5MC03NDM0LTQyMjgtYTBiOS01ZGEwZDJiODNhYWYmaWQ9MzA2OTNhMDgtMGFiMC04MGM0LTg5NjItZWRkN2JhMDU4NWVhJmNhY2hlPXYyJndpZHRoPTIwMA==)
 
 Kusto Query Language (KQL)](/integrations/microsoft/kusto-query-language-\(kql\))

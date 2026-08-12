@@ -35,11 +35,11 @@ Procedure:
 
 -   Connect to your SentinelOne account
 
--   Go here: [https://adista.sentinelone.net/sentinels/packages](https://adista.sentinelone.net/sentinels/packages)
+-   Go here: your SentinelOne console: `https://`<your-tenant>`.sentinelone.net/sentinels/packages`
 
 -   Select the version you want and click on the download icon
 
--   Save the site token obtainable here: [https://adista.sentinelone.net/sentinels/siteInfo](https://adista.sentinelone.net/sentinels/siteInfo)
+-   Save the site token obtainable here: `https://`<your-tenant>`.sentinelone.net/sentinels/siteInfo`
 
 -   Install the Agent and follow the steps
 
