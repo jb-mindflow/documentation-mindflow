@@ -21,4 +21,6 @@ Run flow through webhook](/guides/building-flows/trigger-your-flow/run-flow-thro
 
 Run flow through emails](/guides/building-flows/trigger-your-flow/run-flow-through-emails)[![Run flow through the scheduler](https://www.notion.so/icons/clock_purple.svg?mode=light)
 
-Run flow through the scheduler](/guides/building-flows/trigger-your-flow/run-flow-through-the-scheduler)
+Run flow through the scheduler](/guides/building-flows/trigger-your-flow/run-flow-through-the-scheduler)[![IP Whitelisting](https://www.notion.so/icons/checkmark_purple.svg?mode=light)
+
+IP Whitelisting](/guides/building-flows/trigger-your-flow/ip-whitelisting)

@@ -137,7 +137,7 @@ Therefore, you need to use a “function based” approach defining a contract o
 
 Speaking about input arguments, these one are given as JSON using the “JSON Input” field.
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzVlMzBiODYwLTdhNzItNDliYi1hMWM3LWZlMzc5NGIyMGYwMC9TY3JlZW5zaG90XzIwMjYtMDItMjZfYXRfMTEuNDAuMDAucG5nP3RhYmxlPWJsb2NrJmlkPTMxMzkzYTA4LTBhYjAtODAzNy05NDgyLWUwNGVjMWM4MzMxYiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTIxOTImc2lnbmF0dXJlPUdLaEx3RnRkYV9sT0R4WWJweDhPakREWTl0ZENuMnBxcmdRSDdtNG42X0k=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E1ZTMwYjg2MC03YTcyLTQ5YmItYTFjNy1mZTM3OTRiMjBmMDAlM0FTY3JlZW5zaG90XzIwMjYtMDItMjZfYXRfMTEuNDAuMDAucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTMxMzkzYTA4LTBhYjAtODAzNy05NDgyLWUwNGVjMWM4MzMxYiZjYWNoZT12MiZ3aWR0aD01MjA=)
 
 To use these data in your script, you need to play with the `mindflowData` variable in Javascript and `mindflow_data` in Python (matching casing according to language specificities).
 

@@ -16,7 +16,7 @@ AI**··**Task is designed to interact with external tools, such as calendar app
 
 Create a new flow and click on `Add a step manually` then in `Build-In` : `AI Task`
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzI2MTdlODYxLTQzZmQtNDg3OC1hMmI4LWNmMzg2YWZiODZlZi9TY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuMTcuMzcucG5nP3RhYmxlPWJsb2NrJmlkPTI2ZjkzYTA4LTBhYjAtODA1Ni1hYWQ2LWYyYmM0NDI3NDllOCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTQxMzEmc2lnbmF0dXJlPW55SE5JdzRheVVYaHpUQWlBMXQwU2JOQ1ZlZE9wMWFRbmVsdDIzZGpKczQ=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0EyNjE3ZTg2MS00M2ZkLTQ4NzgtYTJiOC1jZjM4NmFmYjg2ZWYlM0FTY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuMTcuMzcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI2ZjkzYTA4LTBhYjAtODA1Ni1hYWQ2LWYyYmM0NDI3NDllOCZjYWNoZT12MiZ3aWR0aD0xNDIw)
 
 In our case let’s say that we want to simulate the creation of an incident ticket and return the ticket ID, for this you need to :
 
@@ -24,21 +24,43 @@ In our case let’s say that we want to simulate the creation of an incident tic
 
 -   Write your prompt properly
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzQ4Y2JjNjg1LTg3NWQtNGY5My04ZGViLWY0ZjE5MDZiYzU0MC9TY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuMjUuMzIucG5nP3RhYmxlPWJsb2NrJmlkPTI2ZjkzYTA4LTBhYjAtODA4OS05YjBiLWU4ZWUyNjc4Nzk0NCZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTQxNDEmc2lnbmF0dXJlPVY2eC12U0JYNjV2OFhPZFBOelg4ZEdNOWVJUjJDSkllczExQUxSbTNTdlE=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E0OGNiYzY4NS04NzVkLTRmOTMtOGRlYi1mNGYxOTA2YmM1NDAlM0FTY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuMjUuMzIucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI2ZjkzYTA4LTBhYjAtODA4OS05YjBiLWU4ZWUyNjc4Nzk0NCZjYWNoZT12MiZ3aWR0aD0xNDIw)
 
 ### **Adding tools**
 
 If you want to use tools you can ! Imagine that you want to analyze IP adresse via `Virus Total.`
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmL2I2NTU5YWNlLTU2N2MtNGVmNC05YzhkLTgyMWVlZmQ4Y2Q0Ny9TY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNDguMjAucG5nP3RhYmxlPWJsb2NrJmlkPTI2ZjkzYTA4LTBhYjAtODBiNy1iYmFiLWQyNzMyNjM5ZDljMyZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTQxMjkmc2lnbmF0dXJlPVZIblFyZVZTMDM5WDBuUE5PNG96b21BWVBQQzczamZCQWRvb1Boci1sU1E=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0FiNjU1OWFjZS01NjdjLTRlZjQtOWM4ZC04MjFlZWZkOGNkNDclM0FTY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNDguMjAucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI2ZjkzYTA4LTBhYjAtODBiNy1iYmFiLWQyNzMyNjM5ZDljMyZjYWNoZT12MiZ3aWR0aD0xNDIw)
 
 To add tools you just need to go in the `Tools` tab, choose the correct service, select the credential then choose the desired operations.
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzliNmFmZDI5LTZhZTctNGQ4YS1hMTgyLWNiMWJiNjM4MDU2Mi9TY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNDcuNDUucG5nP3RhYmxlPWJsb2NrJmlkPTI2ZjkzYTA4LTBhYjAtODA3ZC1hMWI4LWVmMjRmZWIyMzkyMiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTQxNDImc2lnbmF0dXJlPW9SRW4tb3NBbDRsczhyVFN3WHVMajJIYWVDc1cxSDZ1Vmx4eGxRYnFLRWc=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0E5YjZhZmQyOS02YWU3LTRkOGEtYTE4Mi1jYjFiYjYzODA1NjIlM0FTY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNDcuNDUucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI2ZjkzYTA4LTBhYjAtODA3ZC1hMWI4LWVmMjRmZWIyMzkyMiZjYWNoZT12MiZ3aWR0aD0xNDE5Ljk2ODc1)
 
 Run the flow then you can analyze the output of your `AI Task` :
 
-![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly9maWxlLm5vdGlvbi5zby9mL2YvNTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmLzAzYzdiOTI3LTQzOWQtNDNhOC05MWQwLTQ1YWM3NmJhNmM1YS9TY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNTEuNTcucG5nP3RhYmxlPWJsb2NrJmlkPTI2ZjkzYTA4LTBhYjAtODA1OS1hYTM1LWU1MDFjYzMyNmNmNiZzcGFjZUlkPTU1NjQzYjkwLTc0MzQtNDIyOC1hMGI5LTVkYTBkMmI4M2FhZiZleHBpcmF0aW9uVGltZXN0YW1wPTE3NzUyNDI2NTQxMzkmc2lnbmF0dXJlPXgtSU1oemIxNWFLU1U3VHFReUpVb0c2NlRCWjRCNkNyU3lyTXVKY2Z4UTg=.png?workspaceId=55643b90-7434-4228-a0b9-5da0d2b83aaf)
+![Image without caption](https://image-forwarder.notaku.so/aHR0cHM6Ly93d3cubm90aW9uLnNvL2ltYWdlL2F0dGFjaG1lbnQlM0EwM2M3YjkyNy00MzlkLTQzYTgtOTFkMC00NWFjNzZiYTZjNWElM0FTY3JlZW5zaG90XzIwMjUtMDktMDRfYXRfMTMuNTEuNTcucG5nP3RhYmxlPWJsb2NrJnNwYWNlSWQ9NTU2NDNiOTAtNzQzNC00MjI4LWEwYjktNWRhMGQyYjgzYWFmJmlkPTI2ZjkzYTA4LTBhYjAtODA1OS1hYTM1LWU1MDFjYzMyNmNmNiZjYWNoZT12MiZ3aWR0aD0xNDIw)
+
+## Persistent memory across executions
+
+Your AI Tasks can maintain **persistent memory across multiple executions**, enabling them to remember important information and build upon previous interactions. Each AI Task run also indicates whether that job will write updates back to memory.
+
+### Memory configuration options
+
+-   `**None**`: No memory is stored between runs.
+
+-   **Use case**: One-off transformations like summarizing a single email or extracting fields from one document, where prior context could be noisy or risky.
+
+-   `**New memory**`: Creates a fresh memory context for this task run.
+
+-   **Use case**: Kick off a new project thread, such as onboarding a new customer, where you want continuity within that project but separation from everything else.
+
+-   `**Previous step memory**`: Reuses the memory context created earlier in the same flow execution.
+
+-   **Use case**: Multi-step flows where earlier steps capture requirements and later steps draft outputs, so the task stays consistent without re-passing the full context each time.
+
+-   `**Advanced**`: Select or control memory behavior explicitly, such as choosing a specific memory context.
+
+-   **Use case**: Shared but scoped assistants, like an internal IT helper that uses a per-team memory context while keeping other teams fully isolated.
 
 * * *
 

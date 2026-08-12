@@ -27,4 +27,6 @@ Connect on-premise with Relay Agent](/guides/administrating-the-platform/connect
 
 Exporting logs](/guides/administrating-the-platform/exporting-logs)[![Manage version and deployments](https://www.notion.so/icons/bookmark_blue.svg?mode=light)
 
-Manage version and deployments](/guides/administrating-the-platform/manage-version-and-deployments)
+Manage version and deployments](/guides/administrating-the-platform/manage-version-and-deployments)[![Quotas (admin-only)](https://www.notion.so/icons/123_blue.svg?mode=light)
+
+Quotas (admin-only)](/guides/administrating-the-platform/quotas-\(admin-only\))

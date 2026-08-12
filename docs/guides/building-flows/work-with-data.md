@@ -13,8 +13,17 @@ This documentation section illuminates your data's transformative journey within
 
 -   convert raw data into actionable insights
 
+:::note
+💡
+:::note
+Mindflow supports large JSON datasets up to **50 MB**. For large datasets used in a **For each** , enable the **large dataset** setting to ensure optimal performance.
+:::
+:::
+
 [![Transform data and reassign variables](https://www.notion.so/icons/conceal_purple.svg?mode=light)
 
 Transform data and reassign variables](/guides/building-flows/work-with-data/transform-data-and-reassign-variables)[![Transform functions](https://www.notion.so/icons/mathematics_purple.svg?mode=light)
 
-Transform functions](/guides/building-flows/work-with-data/transform-functions)
+Transform functions](/guides/building-flows/work-with-data/transform-functions)[![JSON Editing for complex parameters](https://www.notion.so/icons/pencil_purple.svg?mode=light)
+
+JSON Editing for complex parameters](/guides/building-flows/work-with-data/json-editing-for-complex-parameters)
